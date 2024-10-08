@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="m.html" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="first">First Name</label>
+            <input type="text" id="first" placeholder="Enter your first name" required>
+
+            <label for="last">Last Name</label>
+            <input type="text" id="last" placeholder="Enter your last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <div class="section-title">Additional Information</div>
+
+            <label for="newsletter">Subscribe to newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <label for="trip-start">Trip Start Date</label>
+            <input type="date" id="trip-start" name="trip-start" min="2000-06-06" max="2024-08-09">
+
+            <label for="file-upload">Upload a File (PNG only)</label>
+            <input type="file" id="file-upload" name="file" accept="image/png">
+
+            <label for="age">Enter Your Age</label>
+            <input type="number" id="age" name="age" min="1">
+
+            <div class="section-title">Gender</div>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="female"> Male
+            </label>
+            <label>
+                <input type="
